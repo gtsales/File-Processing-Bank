@@ -13,7 +13,6 @@ import luiz.sales.file.processing.dto.CustomerRequest;
 import luiz.sales.file.processing.model.Customer;
 import luiz.sales.file.processing.repository.CustomerRepository;
 import luiz.sales.file.processing.service.RegisterCustomer;
-import luiz.sales.file.processing.utils.ConvertDtoToModel;
 
 @RestController
 @RequestMapping("/customer/")
@@ -21,9 +20,6 @@ public class CustomerController implements CustomerApi{
 
 	@Autowired
 	CustomerRepository customerRepository;
-	
-	@Autowired
-	ConvertDtoToModel convertDtoToModel;
 	
 	@Autowired
 	RegisterCustomer registerCustomer;
